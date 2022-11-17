@@ -1,0 +1,219 @@
+
+// navbar styles mobile 
+body {
+    overflow-x: hidden;
+}
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+    #logo {
+        margin: 1%;
+        width: 20%;
+    }
+
+    #big-logo {
+        display: none;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    .dropdown-toggle::after {
+        color: transparent;
+    }
+    #primary-navigation { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+        .dropdown-item:hover {
+            color: $halfmediumblue;
+        }
+
+        a {
+            color: $darkblue;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+   
+    .primary-navigation {
+
+        position: fixed;
+        inset: 0,0,0 30% !important;
+        background-color: rgba(147,190,245,0.7);
+        backdrop-filter: blur(1rem);
+        width:100%;
+        padding: 5rem 2em !important;
+        top: 0px;
+        height: 100%;
+        z-index: 90;
+        transform: translateX(100%);
+        transition: transform 550ms ease-in-out;
+       
+       
+
+        #donate a {
+            color: red;
+        }
+       
+        li {
+            margin-bottom: 2rem;
+            padding-top: .3rem;
+              } 
+    
+        }
+    
+
+        #dropdownMenuButton1 {
+            max-height: 3rem;
+            position: relative;
+            top: 0.2rem;
+        }
+
+        #dropdownMenuButton2 {
+            max-height: 4.5rem;
+            position: relative;
+            top: 1.7rem;
+            margin-bottom: 1.5rem;
+        }
+       
+    nav .dropdown-toggle {
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+        text-align: left;
+        width: 100%;
+        height: 10%;   
+    }
+
+    .primary-navigation[data-visible ="true"] {
+        transform: translateX(0%);
+    }
+
+    
+
+    .mobile-nav-toggle {
+        
+        position: fixed;
+        z-index: 99;
+        background-image: url("../img/hamburger.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        right: 5%;
+        background-color: rgba(147,190,245,0.0);
+    }
+    .mobile-nav-toggle[aria-expanded='true'] {
+        background-image: url("../img/close.png");
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    .primary-header {
+        display: flex;
+        
+        width: 100%;
+        
+
+        #logo {
+            display: none;
+            width: 0%;
+        }
+        #big-logo {
+            display: block;
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0;
+            margin-left: 1%;
+            img {
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+            
+        }
+
+
+        #primary-navigation {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            position: relative;
+            top: 0.5rem;
+            right: 1rem;
+            
+            
+
+            li  {
+                margin-right: 1rem;
+                }
+            
+            a {
+                font-size: 20px;
+            }
+            
+            
+            #donate a {
+                @include cta-button;
+                padding: 5%;
+                
+                
+            }
+            #donate a:hover {
+                background-color: $darkblue;
+                color:red;
+            }
+        }
+
+        nav {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    width: 70%;
+                    
+                }
+
+        .mobile-nav-toggle {
+            display: none;
+        }
+    }
+    nav .dropdown-toggle {
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+        text-align: center;
+        width: auto;
+        height: auto;
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .primary-header #primary-navigation a {
+        font-size: 22px;
+    }
+   
+}
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatable" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@800&display=swap" rel="stylesheet">      
+         <!-- bootstaps -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>DONATE NOW</title>
+    </head>
+
+    <body>
+        <!-- navigation bar -->
+        <header class="primary-header">
+        
+            <!-- navingation bar -->
+            <div id="logo">
+                <a href='index.html'><img id="phone-logo" src="img/phone-icon.png" alt="West Coast Penguin Trust Logo"></a>
+            </div>
+
+            <div id="big-logo">
+                <a href='index.html'><img id="big-logo" src="img/large-icon.png" alt="West Coast Penguin Trust Logo big"></a>
+            </div>
+
+            <!-- <div id="hamburger-icon">
+                <i class="bi bi-list"></i>
+            </div> -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+            </button>
+
+            <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+                <li class="active"><a href='index.html'>HOME</a></li>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li><a href='about-us.html'>ABOUT US</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">OUR TEAM</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">RESEARCH</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">GALLERY</a></li>
+                </ul>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li><a href='get-involved.html'>GET INVOLVED</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="get-involved.html">GET INVOLVED</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">JOIN US</a></li>
+                    <li><a class="dropdown-item" href="volunteer-opportunities.html">VOLUNTEER OPPORTUNITIES</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">NEWS</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">NEWSLETTER</a></li>
+                </ul>
+                <br></br>
+                <li><a href='projects.html'>PROJECTS</a></li>
+                <li><a href='#'>CONTACT</a></li>
+                <li id="donate"><a href='donate.html'>DONATE</a></li>
+            </ul>
+            </nav>
+    </header>
+
+        <!-- donate hero section -->
+        <div class="hero" id="donate-hero-background">
+            <div class="text-content" id='donate-content'>
+                <h1>SAVE OUR PENGUINS</h1>
+                <p>Five of our six penguin species are in decline. Penguins and other seabirds are a treasure or taonga, and we strive to protect and conserve them and their habitat, the wider marine and coastal environment</p>
+            </div>
+            <div id="button-container">
+                <div id="cta-button">
+                <a href='#'><h6>GET INVOLVED</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class=donate-main-wrapper>
+            <p>All fields marked with an <span id='red'>*</span> are required </p>
+            <div id="amount-donate">
+                <h2>DONATION AMOUNT</h2>
+                <!-- form fields -->
+                <form class="needs-validation flex-set" novalidate>
+                    <div class="form-row g-3">
+                      <div id="amount-container" class="col-md-8 mb-3">
+                        <label for="validationTooltipUsername">Amount</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="inputfrequency" class="form-label">Donation Frequency</label>
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One-Off</option>
+                              <option value="2">Annually</option>
+                              <option value="3">Monthly</option>
+                              <option value="3">Fortnightly</option>
+                              <option value="3">Weekly</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="personal-info">
+                <h2>PERSONAL INFORMATION</h2>
+                <form class="personal-form row g-3">
+                    <div class="col-md-6">
+                        <label for="inputFirstname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="Joe" aria-label="First name">
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputLastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Bloggs" aria-label="Last name">
+                       
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPhone" class="form-label">Phone</label>
+                      <input type="number" class="form-control" id="inputPhone">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Post Code</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </form>
+            </div>
+
+            <div class="payment-info">
+                <h2>PAYMENT INFORMATION</h2>
+                <form class="payment-form row g-3">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Payment Method *</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Credit Card</option>
+                          <option value="2">Debit Card</option>
+                          <option value="3">Mastercard</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCardno" class="form-label">Credit Card Number *</label>
+                        <input type="number" class="form-control" id="inputCardno">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputDate" class="form-label">Expiry Date *</label>
+                        <input type="date" class="form-control" id="inputDate">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCVC" class="form-label">CVC *</label>
+                        <input type="number" class="form-control" id="inputCVC">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            I accept Terms & Condiions
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-12" id="form-button">
+                        <button id="cta-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            CONFIRM
+                        </button>
+                      </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="other-ways-help"> 
+            <h2>OTHER WAYS TO SUPPORT US</h2>
+            <div class="help-squares">
+                <h4>BEOME A SUPPORTER!</h4>
+                <p>
+                    We know we have many supporters of all the work we do and we’re appealing to you to formalise your support through an annual donation
+                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='#'><h6>JOIN US</h6></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="t-shirt" class="help-squares">
+                <h4>BUY A T-SHIRT!</h4>
+                <p>
+                    $5 from every sale of the tawaki adult t shirts comes to the Trust, and they support other wonderful conservation charities too!                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='https://tumbleweedtees.com/products/fiordland-crested-penguin-t-shirt' target="#">
+                        <h6>BUY NOW</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-squares">
+                <h4>BUY SUSTAINABLE JEWELLERY & DECORATIONS</h4>
+                <p>
+                    20% from every purchase comes to us as a donation when you put ‘bluepenguin’ in the discount box at the checkout!
+                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='https://stonearrow.co.nz/' target="#">
+                        <h6>BUY NOW</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gift" class="help-squares">
+                <h4>LEAVE A GIFT IN YOUR WILL</h4>
+                <p>
+                    Your lasting legacy will help protect wildlife on the West Coast. Thank you for considering such a valuable and valued bequest. 
+                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='https://www.westcoastpenguintrust.org.nz/wp-content/uploads/2021/03/Leaving-a-gift-in-your-will-for-the-West-Coast-Penguin-Trust.pdf' target="#">
+                        <h6>LEARN MORE</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-squares">
+                <h4>PAYROLL GIVING</h4>
+                <p>
+                    If your employer offers a payroll giving scheme, this is a wonderful way to donate as you receive one third of every donation back as a tax credit. The advice from the IRD is to give your employer
+                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='https://stonearrow.co.nz/' target="#">
+                        <h6>LEARN MORE</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="direct-bank" class="help-squares">
+                <h4>DIRECT BANK PAYMENT</h4>
+                <p>
+                    If you’d rather make a direct payment than use the Trust’s credit or debit card donation system, that would be wonderful!
+                </p>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='https://stonearrow.co.nz/' target="#">
+                        <h6>LEARN MORE</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- donation successful modal  -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                  
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>DONATION CONFIRMED</h5>
+              <img id="thanks-star" src="img/thankyoustar.png">
+                <p>
+                    Thank you for your generous donations. We are thrilled to have your support. Through your donation we have been able to continue running our projects and working towards saving our birdlife and their environment. You truly make the difference for us, and we are extremely grateful!
+                </p>       
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="site-map">
+            <div class="footer-map">
+                <a href='about-us.html'><h6>HOME</h6></a>
+                
+            </div>
+            <div class="footer-map">
+                <a href='about-us.html'><h6>ABOUT US</h6></a>
+                <a href='about-us.html'><p>Reports</p></a>
+                <a href='about-us.html'><p>Our Team</p></a>
+                <a href='about-us.html'><p>Research</p></a>
+                <a href='about-us.html'><p>Gallery</p></a>
+            </div>
+            <div class="footer-map">
+                <a href='get-involved.html'><h6>GET INVOLVED</h6></a>
+                <a href='get-involved.html'><p>Join Us</p></a>
+                <a href='get-involved.html'><p>Volunteer</p></a>
+                <a href='get-involved.html'><p>News</p></a>
+                <a href='get-involved.html'><p>Newsletter</p></a>
+            </div>
+            <div class="footer-map">
+                <a href='projects.html'><h6>PROJECTS</h6></a>
+                <a href='projects.html'><p>Monitor & Review</p></a>
+                <a href='projects.html'><p>Education</p></a>
+                <a href='projects.html'><p>Penguin Fence</p></a>
+            </div>
+            <div class="footer-map">
+                <a href='#'><h6>CONTACT</h6></a>
+                <a href='#'><p>Report Dead Penguin</p></a>
+            </div>
+            <div id="button-container">
+                <div id="cta-button">
+                <a href='donate.html'><h6>DONATE</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-logos">
+            <div class="logo">
+                <a href='index.html'><img src="img/phone-icon.png"></a>
+            </div>
+            <div class="socials">
+                <i class="bi bi-facebook"></i>
+               
+                <a href='#'><img src="img/vimeo.png"></a>
+            </div>
+        </div>
+        <!-- copyright footer -->
+        <div id="copy-right">
+            <p>Copyright © 2018 The West Coast Penguin Trust, New Zealand | admin</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- js script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+   <script src="script.js"></script>
+</body>
+</html>

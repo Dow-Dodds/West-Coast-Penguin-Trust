@@ -1,0 +1,1338 @@
+
+@import 'modules/variables';
+@import 'modules/navbar';
+@import 'modules/hero';
+@import 'modules/footer';
+@import 'modules/projects-involved';
+@import 'modules/donate';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+// homepage mission
+#mission-container {
+  background-image: url(../img/mission-waves.jpg);
+  @include phone-wrappers;
+  
+  h2, p, h4 {
+    color: $darkblue;
+  }
+  
+ 
+
+  #future-vision {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    border-radius: 100%;
+    background-color: white;
+    height: 16rem;
+    line-height: 15rem;
+    -webkit-box-shadow: -4px 9px 26px 5px rgba(11,20,32,0.48); 
+    box-shadow: -4px 9px 26px 5px rgba(74, 161, 166, 0.5);
+  }
+  #future-vision:hover {
+    border: 3px solid $mediumblue;
+    transition: 0.2s ease-in-out;
+  }
+
+
+  #future-vision span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    width: 80%;
+  }
+
+}
+
+// homepage projects 
+#projects-home {
+  background-color: $halflightblue;
+  color: $darkblue;
+  @include phone-wrappers;
+
+  #text-content {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #big-projects-carousel {
+    display: none;
+  }
+
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/ep_arrow-right-bold.png);
+}
+.carousel-control-prev-icon {
+  background-image: url(../img/ep_arrow-left-bold.png);
+}
+
+.carousel-inner {
+  width: 100%;
+  align-content: center;
+
+  .carousel-item{
+    width: 80%;
+    height: 20rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 10%;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out,-webkit-transform 1s ease-in-out !important;
+  }
+  #education {
+    background-image: url(../img/education-project.jpeg);
+    background-size: cover;
+    
+  }
+  #education:hover {
+    box-shadow: inset 0 0 0 1000px $halfmediumblue;
+    transition: 1s ease-in-out!important;
+  }
+
+  h4 {
+    // line-height: 20rem;
+    padding: 10rem;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    padding: 5%;
+   
+    
+  }
+  h4:hover {
+    background-color: $halfdarkblue;
+    transition: .5s ease-in-out;
+    a {
+      color: white;
+    }
+
+  }
+
+  a {
+    color: $darkblue;
+    text-decoration: none;
+  }
+
+}
+
+.carousel-inner #fiordland-penguin {
+  background-image: url(../img/fiordlandpenguin.jpeg);
+  background-size: cover;
+  
+}
+.carousel-inner #fiordland-penguin:hover {
+  box-shadow: inset 0 0 0 1000px $halfmediumblue;
+  transition: 1s ease-in-out !important;
+}
+
+.carousel-inner #penguin-fence {
+  background-image: url(../img/Penguinfence.png);
+  background-size: cover;
+ 
+}
+.carousel-inner #penguin-fence:hover {
+  box-shadow: inset 0 0 0 1000px $halfmediumblue;
+  transition: 1s ease-in-out !important;
+}
+
+.carousel-inner #gps-study {
+  background-image: url(../img/GPS-foragingstudy.png);
+  background-size: cover;
+}
+.carousel-inner #gps-study:hover {
+  box-shadow: inset 0 0 0 1000px $halfmediumblue;
+  transition: 1s ease-in-out !important;
+}
+
+.carousel-inner #cape-foulwind {
+  background-image: url(../img/cape-foulwind.png);
+  background-size: cover;
+}
+.carousel-inner #cape-foulwind:hover {
+  box-shadow: inset 0 0 0 1000px $halfmediumblue;
+  transition: 1s ease-in-out !important;
+}
+
+.carousel-inner #penguin-count {
+  background-image: url(../img/penguin-count.png);
+  background-size: cover;
+}
+.carousel-inner #penguin-count:hover {
+  box-shadow: inset 0 0 0 1000px $halfmediumblue;
+  transition: 1s ease-in-out !important;
+}
+
+
+  // birds we protect section 
+  #birdsweprotect-container {
+    background-color: $halfmediumblue;
+    color: $darkblue;
+    @include phone-wrappers;
+    #button-container #cta-button {
+      @include cta-button;
+    }
+    a {
+      color: $darkblue;
+      text-decoration: none;
+    }
+  }
+  .mosaic-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+
+      h4 {
+        padding: 10rem;
+        background-color: rgba(255,255,255,.5);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 5%;
+        position: relative;
+        top: 5%;
+
+      }
+      h4:hover {
+        background-color: $halfdarkblue;
+        transition: .5s ease-in-out;
+        color: white;
+        a {
+          color: white !important;
+        }
+      }
+
+      #large-image {
+        width: 100%;
+        height: 20rem;
+        background-image: url(../img/little-blue-penguin.jpeg);
+        background-size: cover;
+      }
+      #large-image:hover {
+        box-shadow: inset 0 0 0 1000px $halfmediumblue;
+        transition: 1s ease-in-out;
+      }
+    
+      #middle-images {
+        width: 100%;
+        flex-direction: column;
+        height: 40rem;
+      }
+      #middle-images #top-middle-image:hover {
+        box-shadow: inset 0 0 0 1000px $halfmediumblue;
+        transition: 1s ease-in-out;
+      }
+      #middle-images #top-middle-image {
+        width: 100%;
+        height: 50%;
+        background-image: url(../img/cutecrestedpenguins.jpeg);
+        background-size: cover;
+      }
+      #middle-images #bottom-middle-image {
+        width: 100%;
+        background-image: url(../img/westland-petral.jpeg);
+        background-size: cover;
+        height: 50%;
+      }
+      #middle-images #bottom-middle-image:hover {
+        box-shadow: inset 0 0 0 1000px $halfmediumblue;
+        transition: 1s ease-in-out;
+      }
+
+      #last-image {
+        width: 100%;
+        height: 20rem;
+        background-image: url(../img/other-birds.jpeg);
+        background-size: cover;
+      }
+      #last-image:hover {
+        box-shadow: inset 0 0 0 1000px $halfmediumblue;
+        transition: 1s ease-in-out;
+      }
+  }
+
+  #savebirds-section {
+    @include phone-wrappers;
+    border-bottom: none;
+  }
+
+  #cta-button:hover {
+    background-color: white;  
+}
+
+#cta-button h6:hover {
+  border-bottom: none;
+  color: red;
+  
+}
+
+#cta-button a:hover {
+  text-decoration: none;
+}
+
+  // news section styling homepage
+  .news-wrapper {
+    @include phone-wrappers;
+    width: 100%;
+    background-color: $halflightblue;
+    .big-news-wrapper {
+      display: none;
+    }
+    .carousel-inner {
+      margin-bottom: 5%;
+      border-radius: 10px;
+      background-color: white;
+      width: 80%;
+      margin-left: 10%;
+      min-height: 30rem;
+    }
+    .carousel-inner .photo-wrapper {
+      width: 100%;
+      height: auto;
+    }
+    .carousel-inner .photo-wrapper img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+      margin-bottom: 5%;
+      border-radius: 10px;
+    }
+
+    .carousel-inner #text-content p {
+      margin-bottom: 5%;
+    }
+  }
+
+  .news-wrapper {
+    padding-bottom: 0px;
+  }
+
+.news-wrapper .newsletter-container {
+  background-color: $halfdarkblue;
+    #sign-up {
+      @include phone-wrappers;
+      border-bottom: none;
+      color: white;
+      h3 {
+        width: 80%;
+        margin-left: 10%;
+      }
+      input {
+        margin-bottom: 5%;
+        border-radius: 10px;
+      }
+
+      p {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    
+    #current-newsletter {
+      background-image: url(../img/newsleter-background.png);
+      height: 348px;    
+      color: white; 
+
+      .text-content {
+        position: relative;
+        top: 25%;
+       
+      }
+    }
+    #current-newsletter:hover {
+      box-shadow: inset 0 0 0 1000px $halfmediumblue;
+      transition: 1s ease-in-out;
+    }
+    #current-newsletter #regular-button-white {
+      background-color:white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: $darkblue;
+    text-decoration: none;
+    height: 2rem;
+    margin-top: 5rem;
+     h6 {
+         line-height: 2rem;
+         color: $darkblue;
+     }
+    }
+
+    #current-newsletter #regular-button-white:hover {
+      background-color: $darkblue;
+        h6 {
+          color: white;
+          
+        }
+        a {
+          text-decoration: none;
+        }
+
+    }
+}
+
+// Awards section home
+.awards-wrapper {
+  background-image: url(../img/newsleter-background.jpeg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.7);
+  @include phone-wrappers;
+
+  .box-awards {
+    background-color: rgba(255,255,255,.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .box-awards img {
+    border-radius: 10px;
+    max-width: 18rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+// Sponsors section 
+.sponsors-wrapper {
+  background-color: $halfmediumblue;
+  @include phone-wrappers;
+}
+.sponsors-wrapper #box-white {
+  background-color: rgba(255,255,255,.5);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  object-fit: cover;
+  .logo {
+        max-width: 30%;
+        max-height: 100%;
+        padding-right: 1%;
+      }
+  #tawaki {
+    max-height: 30rem;
+    max-width: 20%;
+  }
+  #col-four {
+    max-height: 10rem;
+    
+  }
+
+}
+  
+
+// ABOUT US STYLES
+
+.about-content-wrapper {
+  @include phone-wrappers;
+  width: 100%;
+
+  .bold-para {
+    width: 80%;
+    margin-left: 10%;
+    
+  }
+  .bold-para h6 {
+    line-height: 2rem;
+  }
+  img { 
+    width: 100%;
+  }
+  .about-text-content {
+    display: none;
+  }
+  #menu-accordian .accordion-button h2 {
+    margin-bottom: 0px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: $halflightblue;
+    color: $mediumblue; 
+  }
+
+  #menu-accordian #flush-collapseOne .accordion-body {
+    p {
+      line-height: 2rem;
+    }
+  }
+  #report-box {
+    background-image: url(../img/report-box-background.jpeg);
+  }
+  #report-box-two {
+    background-image: url(../img/report-image-two.jpeg);
+    background-size: cover;
+   
+  }
+  .report-box {
+    padding-top: 5%;
+    background-size: cover;
+    color: white;
+    width: 80%;
+    height: 18rem;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 0 1000px rgba(36, 104, 141, 0.7);
+
+    h2 {
+      margin-bottom: 0px;
+    }
+    #button-container {
+      width: 100%;
+    }
+    #cta-button {
+      width: 40%;
+      
+    }
+  }
+
+  .report-box p {
+    width: 80%;
+    
+  }
+ 
+}
+
+
+
+// meet team (about us) styles 
+
+.meet-team-wrapper {
+  background-color: $halfmediumblue;
+  @include phone-wrappers;
+  border-bottom: none;
+
+  .big-screen-team {
+    display: none;
+  }
+
+  #carouselExampleControls .carousel-inner {
+    color: white;
+   
+      .carousel-item .text-content {
+        margin-top: 17rem;
+        margin-bottom: 5%;
+        background-color: $halfdarkblue;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 10px;
+        height: auto;
+        
+      }
+      .carousel-item .text-content:hover {
+        background-color: rgba(255,255,255,.5);
+        transition: .5s ease-in-out;
+        a {
+          color: $darkblue;
+          text-decoration: none;
+        }
+        p {
+          color: $darkblue;
+        }
+      }
+
+      a {
+        color: white;
+      }
+    
+  }
+
+  #carouselExampleControls-two .carousel-inner {
+    color: white;
+    .carousel-item .text-content {
+      margin-top: 18rem;
+      margin-bottom: 5%;
+      background-color: $halfdarkblue;
+      width: 80%;
+      margin-left: 10%;
+      border-radius: 10px;
+      height: auto;
+      
+    }
+      a {
+        color: white;
+      }
+    
+  }
+  
+  #carouselExampleControls .carousel-inner #robin-long {
+    background-image: url(../img/robin-long.png);
+    background-size: cover;
+    height: 25rem;
+    
+    
+  }
+  #carouselExampleControls .carousel-inner #kerry-jayne {
+    background-image: url(../img/kerry-jayne.png);
+    background-size: cover;
+    height: 25rem;
+
+
+  }
+  #carouselExampleControls .carousel-inner #jill-cotton {
+    background-image: url(../img/jill-cotton.png);
+    background-size: cover;
+    height: 25rem;
+   
+
+
+  }
+  #carouselExampleControls-two .carousel-inner #inger-perkins {
+    background-image: url(../img/inger-perkins.png);
+    background-size: cover;
+    height: 25rem;
+    
+
+
+  }
+  #carouselExampleControls-two .carousel-inner #linden-brown {
+    background-image: url(../img/linden-brown.png);
+    background-size: cover;
+    height: 25rem;
+    
+
+  }
+  #carouselExampleControls-two .carousel-inner #lucy-waller {
+    background-image: url(../img/lucy-waller.png);
+    background-size: cover;
+    height: 25rem;
+    
+
+  }
+
+  #carouselExampleControls .carousel-inner #craig-potten {
+    background-image: url(../img/craig-potten.png);
+    background-size: cover;
+    height: 25rem;
+    
+    
+  }
+}
+
+// team modals 
+.modal-dialog .modal-content {
+  background-color: $darkblue;
+  color: white;
+  .modal-body ul {
+    font-family: 'lora', serif;
+    font-size: 18px;
+    line-height: 2rem;
+    
+  }
+  .modal-body #body-top{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .modal-body img {
+    max-width: 50%;
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100%;
+    
+
+
+  }
+  .modal-body #small-item {
+    width: 50%;
+    line-height: 2rem;
+    padding-left: 5%;
+    
+  }
+}
+
+.btn-close {
+  background: url(../img/fontisto_close.png);
+  background-size: cover;
+}
+
+// research (about us) Section 
+.reserch-wrapper {
+  background-image: url(../img/research-background.png);
+  background-size: cover;
+  @include phone-wrappers;
+   .table-container #table-search {
+     background-color: $darkblue;
+     color: white;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     border-radius: 10px;
+     #search-title {
+      margin-top: 6.5%;
+      margin-left: 5%;
+      width: 30%;
+     }
+   }
+   .table-container #table-search .dropdown {
+     width: 20%;
+     margin: 5%;
+   }
+
+   .table-container #table-search .dropdown button {
+     padding: 5%;
+     font-family: 'Poppins', sans-serif;
+     
+   }
+
+   #myInput {
+     margin-left: 5%;
+     margin-right: 5%;
+   }
+   
+  
+  //  search bar styles 
+   #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+   
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 10px;
+    font-size: 18px; /* Increase font-size */
+    .header #row {
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    font-family: 'Lora', serif;
+    a {
+      color: $darkblue;
+    }
+  }
+  
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.5);
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+}
+
+// gallery styles (about us)
+.gallery-wrapper {
+  @include phone-wrappers;
+}
+.gallery-wrapper #gallery-carousel .carousel-inner {
+  height: 27rem;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 25rem;
+    border-radius: 10px;
+  }
+} 
+
+// MEDIA QUERIES
+
+@media only screen and (min-width: 768px) {
+
+  // homepage our mission stlyles tablet 
+  #mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2 {
+      width: 100%;
+    }
+    #future-vision {
+      width: 40%;
+      margin-left: 0px;
+      height: 19rem;
+      line-height: 19rem;
+    }
+    .one-vision {
+      margin-right: 5%;
+    }
+    .two-vision {
+      margin-left: 5%;
+    }
+  }
+
+  // birds we protect section 
+  
+
+  .mosaic-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    
+      #large-image {
+        width: 33.33%;
+        height: 30rem;
+        background-image: url(../img/little-blue-penguin.png);
+        background-size: cover;
+      }
+
+      #middle-images {
+        width: 33.33%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 30rem;
+        flex-direction: column;
+      }
+
+      #middle-images #top-middle-image {
+        background-image: url(../img/cutecrestedpenguins.jpeg);
+        background-size: cover;
+        height: 50%;
+      }
+      #middle-images #bottom-middle-image {
+        background-image: url(../img/westland-petral.jpeg);
+        background-size: cover;
+        height: 50%;
+      }
+      #last-image {
+        width: 33.33%;
+        height: 30rem;
+        background-image: url(../img/other-birds.jpeg);
+        background-size: cover;
+      }
+  }
+
+// homepage our awards 
+  .awards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h2 {
+      width: 100%;
+    }
+    .box-awards {
+      width: 27%;
+      margin-left: 0px;
+    }
+    .margin-right {
+      margin-right: 5%;
+    }
+
+    .box-awards img {
+      max-width: 11.5rem;
+    }
+
+  }
+
+  footer #footer-logos .socials {
+    padding-right: 11.5%;
+  }
+
+  // ABOUT US 768px STYLES 
+  .about-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    .bold-para {
+      width: 45%;
+      margin-left: 0%;
+      margin-right: 5%;
+    }
+    .image-wrapper {
+      width: 40%;
+    }
+    .image-wrapper img {
+      object-fit: cover;
+      height: 20rem;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    #menu-accordian {
+      display: none;
+    }
+    .about-text-content {
+      display: block;
+      width: 90%;
+      
+    }
+    .report-box {
+      width: 42.5%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
+      margin-bottom: 0px;
+    }
+  }
+  .meet-team-wrapper {
+    h2, h5 {
+      margin-bottom: 2%;
+    }
+    .carousel-inner .carousel-item {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: auto;
+    }
+    #carouselExampleControls .carousel-inner #robin-long {
+      height: 32rem;
+    }
+    #carouselExampleControls .carousel-inner #kerry-jayne {
+      height: 32rem;
+    }
+    #carouselExampleControls .carousel-inner #jill-cotton {
+      height: 32rem;
+    }
+    #carouselExampleControls-two .carousel-inner #inger-perkins {
+      height: 32rem;
+    }
+    #carouselExampleControls-two .carousel-inner #linden-brown {
+      height: 32rem;
+    }
+    #carouselExampleControls-two .carousel-inner #lucy-waller {
+      height: 32rem;
+    }
+    #carouselExampleControls .carousel-inner #craig-potten {
+      height: 32rem;
+    }
+    #carouselExampleControls .carousel-inner .carousel-item .text-content {
+      margin-top: 25rem;
+      padding: 2%;
+      h3 {
+        margin-bottom: 1%;
+      }
+    }
+    #carouselExampleControls-two .carousel-inner .carousel-item .text-content {
+      margin-top: 25rem;
+      padding: 2%;
+      h3 {
+        margin-bottom: 1%;
+      }
+    }
+  }
+
+.reserch-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .table-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    .table-container #table-search {
+      width: 90%;
+      #myInput {
+        margin-bottom: 5%;
+      }
+      #search-title {
+        margin-left: -2%;
+      }
+      .dropdown {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+      }
+      .dropdown button {
+        font-size: 20px;
+      }
+    }
+    .table-container #myTable {
+      width: 90%;
+    }
+  
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  // homepage big screen styles 
+  // our mission styles 
+  h2 {
+    font-size: 50px;
+  } 
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  h6 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #mission-container {
+    #future-vision {
+      width: 35%;
+      height: 25rem;
+      line-height: 25rem;
+    }
+  }
+  // projects home styles 
+  #projects-home {
+    #carouselExampleControls {
+      display: none;
+    }
+    #big-projects-carousel {
+      display: block;
+      .carousel-inner {
+        height: 24rem;
+      }
+      .carousel-item {
+        height: auto;
+        margin-top: 3%;
+      }
+      .carousel-item .project-container {
+        width: 33%;
+        height: 19rem;
+        border-radius: 10px;
+      }
+      .carousel-item #education {
+        h4 {
+        position: relative;
+        top: 7rem;
+        }
+      }
+      .carousel-item #fiordland-penguin {
+        position: relative;
+        left: 35%;
+        bottom: 19.95rem;
+        h4 {
+          top: 3rem;
+          position: relative;
+        }
+      }
+      .carousel-item #penguin-fence {
+        position: relative;
+        left: 70%;
+        bottom: 40rem;
+        h4 {
+          position: relative;
+          top: 5rem;
+        }
+      }
+      .carousel-item #gps-study {
+        h4 {
+          position: relative;
+          top: 5rem;
+        }
+      }
+      .carousel-item #cape-foulwind {
+        position: relative;
+        left: 35%;
+        bottom: 19.95rem;
+        h4 {
+          position: relative;
+          top: 5rem;
+        }
+      }
+      .carousel-item #penguin-count {
+        position: relative;
+        left: 70%;
+        bottom: 40rem;
+        h4 {
+          position: relative;
+          top: 5rem;
+        }
+      }
+    }
+  }
+
+  // birds we protect styles big screen
+   #birdsweprotect-container {
+     padding-bottom: 0px;
+   }
+  // news big screen styles  
+  .news-wrapper {
+    #carouselExampleControls-news {
+      display: none;
+    }
+  }
+  .news-wrapper .big-news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .format-news {
+      width: 27%;
+      margin-bottom: 5%;
+    }
+  }
+  .big-news-wrapper .format-news {
+    #text-content {
+      background-color: rgba(255,255,255,.5);
+      padding: 5%;
+      border-radius: 10px;
+
+      a {
+        color: $darkblue;
+      }
+    }
+    .photo-wrapper {
+      img {
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+  .newsletter-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    #current-newsletter {
+      width: 40%;
+      height: auto !important;
+      border-radius: 10px;
+      margin: 5%;
+    }
+    #sign-up {
+      width: 50%;
+      #text-content #email {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .newsletter-container #current-newsletter .text-content {
+    #regular-button-white {
+      height: 3rem;
+    }
+    #regular-button-white h6 {
+      line-height: 3rem;
+    }
+  }
+
+  // big screen home awards section 
+  .awards-wrapper {
+    justify-content: space-evenly;
+    .box-awards {
+      width: 26%;
+    }
+    .box-awards img {
+      max-width: 19.5rem;
+    }
+    .margin-left {
+      margin-left: 5%;
+    }
+    .big-right {
+      margin-right: 5%;
+    }
+  }
+  // big screen home sponsors section 
+  .sponsors-wrapper {
+    #box-white {
+      padding-bottom: 10%;
+    }
+    #col-four {
+      margin-left: 10%;
+      #buller {
+        width: 40rem;
+      }
+    }
+  }
+
+  // ABOUT US LARGE SCREEN STYLES
+  .about-content-wrapper {
+    width: 100%;
+    .bold-para {
+    text-align: left;
+    width: 55% !important;
+    margin-left: 0% !important;
+    margin-right: 4% !important;
+    h6 {
+      line-height: 2.5rem !important;
+    }
+    }
+    .image-wrapper {
+      width: 30% !important;
+    }
+    .about-text-content {
+      text-align: left;
+      p {
+        line-height: 2.5rem;
+      }
+    }
+    #report-box {
+      height: 30rem;
+    }
+    #report-box-two {
+      height: 30rem;
+    }
+  }
+  .meet-team-wrapper {
+    padding-bottom: 0%;
+    h4 {
+      font-size: 40px;
+      text-align: left;
+      margin-left: 5%;
+    }
+    #carouselExampleControls {
+      display: none;
+    }
+    #carouselExampleControls-two {
+      display: none;
+    }
+    .big-screen-team {
+      display: flex;
+    }
+    #padding-bottom {
+      padding-bottom: 5%;
+    }
+  }
+  .meet-team-wrapper .big-screen-team {
+    .staff-wrapper {
+      width: 33.33%;
+      height: 30rem; 
+    }
+    #robin-long {
+      background-image: url(../img/robin-long.png);
+      background-size: cover;
+    }
+    #kerry-jayne {
+      background-image: url(../img/kerry-jayne.png);
+      background-size: cover;
+    }
+    #jill-cotton {
+      background-image: url(../img/jill-cotton.png);
+      background-size: cover;
+    }
+    #inger-perkins {
+      background-image: url(../img/inger-perkins.png);
+      background-size: cover;
+    } 
+    #linden-brown {
+      background-image: url(../img/linden-brown.png);
+      background-size: cover;
+    } 
+    #lucy-waller {
+      background-image: url(../img/lucy-waller.png);
+      background-size: cover;
+    } 
+    #craig-potten {
+      background-image: url(../img/craig-potten.png);
+      background-size: cover;
+    }
+    .staff-wrapper .text-content {
+      background-color: $halfdarkblue;
+      border-radius: 10px;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 80%;
+      p {
+        color: white;
+      }
+    }
+
+    .staff-wrapper .text-content:hover {
+      background-color: rgba(255,255,255,.5);
+      transition: .5s ease-in-out;
+      a {
+        color: $darkblue;
+        text-decoration: none;
+      }
+      p {
+        color: $darkblue;
+      }
+    }
+  } 
+  .staff-modal .modal-dialog .modal-content {
+    width: 150%;
+    left: -10rem;
+    .modal-header
+    h5 {
+      font-size: 30px;
+    }
+    .modal-body {
+      ul {
+        font-size: 25px;
+        line-height: 2.5rem;
+      }
+     #small-item {
+      line-height: 2.5rem;
+      margin-top: 7%;
+      }
+    }
+    .modal-footer {
+      button {
+        font-size: 20px;
+      }
+    }
+  }
+  // research big screen styles 
+  .reserch-wrapper .table-container{
+    #table-search {
+    width: 80%;
+      button {
+        font-size: 24px !important;
+      }
+      .dropdown ul li {
+        font-size: 20px;
+      }
+      input {
+        font-size: 24px;
+      }
+    }
+    #myTable {
+      width: 80%;
+      .header #row {
+        font-size: 24px;
+      }
+      td {
+        font-size: 24px;
+      }
+    }
+  }
+  // gallery big screen styles 
+  .gallery-wrapper {
+    h2 {
+      margin-bottom: 4%;
+    }
+    #gallery-carousel .carousel-inner {
+      height: 42rem;
+      img {
+        height: 40rem;
+      }
+    }
+  }
+
+}
+

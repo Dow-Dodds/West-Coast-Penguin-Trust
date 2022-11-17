@@ -1,0 +1,269 @@
+
+// hero mixins 
+@mixin hero-wrapper {
+  padding: 5%;
+  background-size: cover;
+}
+
+@mixin hero-text {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      background-color:rgba(255, 255, 255, 0.5) ;
+      border-radius: 10px;
+}
+
+@mixin hero-text-white {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  background-color:$halfdarkblue;
+  border-radius: 10px;
+  color: white;
+}
+
+// homepage hero styling
+
+.hero {
+    @include hero-wrapper;
+    background-image: url(../img/Hero-Image-copy.png) ;
+    border-bottom: 3px solid $darkblue;
+   
+  
+    #text-content {
+     @include hero-text;
+     margin-bottom: 5%;
+     padding-bottom: 2%;
+    }
+
+    #text-content h1 {
+      margin-bottom: 2%;
+    }
+  
+    #button-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    #cta-button a {
+      text-decoration: none;
+    }
+    #cta-button h6:hover {
+      color: red;
+    }
+  
+    #cta-button {
+      @include cta-button 
+    }
+
+    #cta-button:hover {
+      background-color: white;
+    }
+  }
+
+  //about us hero styling 
+  .hero-about {
+    border-bottom: 3px solid $darkblue;
+    @include hero-wrapper;
+    background-image: url(../img/aboutus-hero.png) ;
+   
+  
+    #text-content {
+     @include hero-text;
+     line-height: 2rem;
+    }
+  
+    #button-container {
+      width: 100%;
+      align-items: center;
+    }
+  
+    #cta-button {
+      @include cta-button 
+    }
+  }
+
+  .volunteer-hero {
+    @include hero-wrapper;
+    background-image: url(../img/hero-volunteer-ops.jpeg);
+    box-shadow: inset 0 0 0 1000px $halfdarkblue;
+   
+    #text-content {
+      @include hero-text-white;
+    }
+   
+  }
+
+  // get involved & projects hero stylings 
+  .project-heading {
+    @include phone-wrappers;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    h1 {
+      width: 100%;
+      margin-top: 5%;
+    }
+    p {
+      width: 80%;
+      margin-bottom: 5%;
+    }
+  }
+
+  // volunteer opp hero stylings
+  .volunteer-hero {
+    @include phone-wrappers;
+    p {
+      line-height: 2rem;
+    }
+    #button-container {
+      width: 100%;
+      display: flex;
+      flex-grow: wrap;
+      justify-content: center;
+    }
+  }
+
+  .volunteer-hero #cta-button {
+    width: 60%;
+    display: flex;
+    flex-grow: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    h6 {
+      margin-bottom: 0px;
+    }
+  }
+
+
+// MEDIA QUERIES 
+  
+  @media only screen and (min-width: 760px) {
+    // homepage hero media query 
+    .hero {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      background-image: url(../img/Hero-Image.png) ;
+
+     #button-container {
+      width: 50%;
+      margin-left: 25%;
+
+      }
+      
+      #text-content {
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+
+
+ 
+  @media only screen and (min-width: 1200px) {
+     // homepage hero media query 
+     h1 {
+       font-size: 60px
+     }
+    .hero {
+      @include hero-wrapper;
+      background-image: url(../img/Hero-Image.png) ;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      
+     
+    
+      #text-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        background-color:rgba(255, 255, 255, 0.4) ;
+        border-radius: 10px;
+      //  margin-bottom: 0%;
+       padding-bottom: 2%;
+       width: 60%;
+            h1 {
+              font-size: 60px;
+            
+            }
+            p {
+              font-size: 25px;
+              line-height: 3rem;
+            }
+      }
+  
+      #text-content h1 {
+        margin-bottom: 2%;
+      }
+    
+      #button-container {
+        width: 50%;
+        text-align: left;
+        margin-left: 0%;
+      }
+
+      #cta-button {
+        margin-left: 0;
+        height: 3rem;
+
+        
+      }
+      #cta-button h6 {
+        font-size: 25px;
+        line-height: 3rem;
+      }
+    }
+
+ // about us hero media query 
+    .hero-about {
+      width: 100%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      #text-content {
+        width: 50%;
+        text-align: left;
+        p {
+          line-height: 3rem;
+        }
+      }
+    }
+
+    // volunteer ops hero styles 
+    .volunteer-hero {
+     
+      #text-content {
+        width: 60%;
+        text-align: left;
+        p {
+          line-height: 3rem;
+        }
+      }
+      #button-container {
+        width: 35%;
+        position: relative;
+        right: 4rem;
+      }
+    }
+
+    // donate big hero styles 
+    #donate-hero-background {
+      width: 100%;
+      box-shadow: inset 0 0 0 1000px rgba(11, 10, 32, 0.3)!important;
+      
+      #donate-content {
+        text-align: left;
+        width: 60%;
+        background-color: $halfdarkblue;
+        border-radius: 10px;
+          p {
+          
+          line-height: 2.5rem !important;
+          }
+
+      }
+    }
+    
+}

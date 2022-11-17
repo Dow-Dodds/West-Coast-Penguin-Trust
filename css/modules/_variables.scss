@@ -1,0 +1,90 @@
+
+// colours
+$darkblue: rgb(11,20,32);
+$halfdarkblue: rgba(11,10,32,0.5);
+$mediumblue: rgba(36, 104, 141, 1);
+$halfmediumblue: rgba(36, 104, 141, 0.5);
+$lightblue: rgb(147,190,245);
+$halflightblue:rgba(147,190,245,0.5);
+$grey: #7D8690; 
+
+// fonts
+h1, h2, h3, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 5%;
+    
+}
+
+h6 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 32px;
+
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+@mixin cta-button {
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+    text-decoration: none;
+    height: 3rem;
+     h6 {
+         line-height: 3rem;
+         color: white;
+         margin-bottom: 0px;
+     }
+     a {
+         text-decoration: none;
+     }
+}
+
+@mixin white-button {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: $darkblue;
+    text-decoration: none;
+    height: 3rem;
+     h6 {
+         line-height: 2rem;
+         color: $darkblue;
+         margin-bottom: 0px;
+     }
+     a {
+        text-decoration: none;
+    }
+}
+
+@mixin  phone-wrappers {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-bottom: 3px solid $darkblue;
+    
+    
+}
+

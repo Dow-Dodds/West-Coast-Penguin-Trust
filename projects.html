@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatable" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@800&display=swap" rel="stylesheet">      
+         <!-- bootstaps -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Projects Landing Page</title>
+    </head>
+
+    <body>
+        <!-- navigation panel -->
+        <header class="primary-header">
+        
+            <!-- navingation bar -->
+            <div id="logo">
+                <a href='index.html'><img id="phone-logo" src="img/phone-icon.png" alt="West Coast Penguin Trust Logo"></a>
+            </div>
+
+            <div id="big-logo">
+                <a href='index.html'><img id="big-logo" src="img/large-icon.png" alt="West Coast Penguin Trust Logo big"></a>
+            </div>
+
+            <!-- <div id="hamburger-icon">
+                <i class="bi bi-list"></i>
+            </div> -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+            </button>
+
+            <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+                <li class="active"><a href='index.html'>HOME</a></li>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li><a href='about-us.html'>ABOUT US</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">OUR TEAM</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">RESEARCH</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">GALLERY</a></li>
+                </ul>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li><a href='get-involved.html'>GET INVOLVED</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="get-involved.html">GET INVOLVED</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">JOIN US</a></li>
+                    <li><a class="dropdown-item" href="volunteer-opportunities.html">VOLUNTEER OPPORTUNITIES</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">NEWS</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">NEWSLETTER</a></li>
+                </ul>
+                <br></br>
+                <li><a href='projects.html'>PROJECTS</a></li>
+                <li><a href='#'>CONTACT</a></li>
+                <li id="donate"><a href='donate.html'>DONATE</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <!-- main page content  -->
+        <div class="project-heading">
+            <h1>OUR PROJECTS</h1>
+            <p>Learn more about the projects we run to help our local penguins and birdlife </p>
+        </div>
+
+        <div class="project-wrapper">
+            <div class="project-box" id="penguin-fence" data-bs-toggle="modal" data-bs-target="#ProjectModal">
+                <div id="headings-projects">
+                <h4>PAHAUTANE PENGUIN FENCE</h4>
+                </div>
+            </div>
+
+            <div class="project-box" id="education">
+                <div id="headings-projects">
+                <h4>EDUCATION</h4>
+                </div>
+            </div>
+
+            <div class="project-box" id="fiordland-crested">
+                <div id="headings-projects">
+                 <h4>FIORDLAND CRESTED PENGUIN PREDATOR STUDY</h4>
+                </div>
+            </div>
+
+            <div class="project-box" id="gps-study">
+                <div id="headings-projects">
+                    <h4>GPS FORAGING STUDY</h4>
+                </div>
+            </div>
+
+            <div class="project-box" id="cape-foulwind">
+                <div id="headings-projects">
+                    <h4>CAPE FOULWIND & WALL ISLAND</h4>
+                </div>
+            </div>
+
+            <div class="project-box" id="west-coast">
+                <div id="headings-projects">
+                    <h4>WEST COAST PENGUIN COUNT</h4>
+                </div>
+            </div>
+        </div>
+
+         <!-- MODAL -->
+    <div class="modal-wrapper">
+         <div class="modal fade project-modal" id="ProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <div>
+                    <h2 class="modal-title" id="exampleModalLabel">PAHAUTANE PENGUIN FENCE</h2>
+                     
+                </div>        
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-container">
+                        <div id="top-section">
+                        <div id="text-container">
+                            <h4>
+                                WHY BUILD A FENCE?
+                            </h4>
+                            <p>
+                                Where the Coast Road is close to the sea, penguins may choose to nest on the ‘wrong’ side of the road. 
+                            </p>
+                            <br></br>
+                            <p>
+                                Both parents will feed penguin chicks and they often go to sea to forage every day, leaving around dawn and returning after dark.  These small birds don’t stand a chance against vehicles and large numbers of birds have been killed on some sections of the road.  
+                            </p>
+                            <br></br>
+                            <p>
+                                A fence on the sea side of the road was the obvious solution as it restricts the penguins to nesting habitat below the road, preventing them nesting and therefore crossing to the other side of the road.
+                            </p>
+                        </div>
+                        <div id="image-container">
+                            <img id="penguin-fence" src="img/project-fence-image.png">
+                        </div>
+                        </div>
+
+                        <div id="second-text-container">
+                            <h4>
+                                WHY BUILD IT HERE?
+                            </h4>
+                            <p>
+                                The West Coast Penguin Trust has been recording penguin mortality since its inception in 2006. 
+                            </p>
+                            <br></br>
+                            <p>
+                                A few sites along the Coast Road have been found to be hotspots for road kill. Three locations on the Coast Road (SH6) have claimed the lives of over 100 penguins in five years. They are the McCarthy Creek area, the south side of the Fox River Bridge, and Pahautane Beach to Hatters Bay. 
+                            </p>
+                            <br></br>
+                            <p>
+                                The annual penguin census, along with scientific studies, suggest that blue penguin numbers on the West Coast are continuing to decline.
+                            </p>
+                        </div>
+                    </div>  
+                    
+                    <div class="project-progress">
+                        <div>
+                            <h3>
+                                PROJECT PROGRESS
+                            </h3>
+                        </div>
+                        <!-- project progress carousel -->
+                        <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active pp-one" id="gallery-item">              
+                                   <p>In March 2012, the Trust and Conservation Volunteers erected a trial 100 metre long penguin fence south of Punakaiki, which proved very successful and the design was used for the new fences.
+                                </p>
+                            </div>
+            
+                            <div class="carousel-item pp-two" id="gallery-item">
+                                <p>The Trust talked to OPUS, NZTA and DOC about building a $40,000 penguin protection fence along 2.6km of coastal highway, stretching from just north of Meybille Bay through to Limestone Creek since 2009. On 22nd August 2014, the last gate in the new fence was officially closed by Buller Mayor, Garry Howard.</p>
+                            </div>
+            
+                            <div class="carousel-item pp-three" id="gallery-item">
+                                <p>A year later, and ahead of the 2015 breeding season, the Trust completed another 300m of fencing along the coast highway near Seal Island, another location where road kills have been recorded. These fences have cut road kills in the area from 7 birds annually to zero.</p>
+                            </div> 
+
+                            <div class="carousel-item pp-four" id="gallery-item">
+                                <p>We’re very grateful to the local teams from Fulton Hogan and WestReef, who, with annual support from the NZ Transport Agency, carry out weed spraying and maintenance.  The former ensures that the vegetation does not become too abundant and heavy, which could damage the fence.</p>
+                            </div> 
+
+                            <div class="carousel-item pp-five" id="gallery-item">
+                                <p>The fence is a deceptively simple black geosynthetic mesh that will prevent penguins straying on to the road. Driveway and beach access has been retained, and the Trust has installed spring-loaded gates.</p>
+                            </div> 
+
+                            <div class="carousel-item pp-six" id="gallery-item">
+                                <p>A similar fence erected by the Friends of Lillico Penguins in Tasmania along a major highway, has been very successful in bringing down the numbers of penguins killed on the road and increasing the penguin population.</p>
+                            </div> 
+
+                            </div>
+            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="help-project">
+                        <div class="text-context">
+                            <h3>HOW YOU CAN HELP</h3>
+                            <p>
+                                The completed fence requires occasional maintenance and costs will be ongoing.  Your donation will help to keep the penguin protection fence working as designed.
+                            </p>
+                        
+                        <div class="button-container">
+                            <div id="cta-button">
+                                <a href='#'><h6>DONATE NOW</h6></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="image-container">
+                            <img id="project-penguin" src="img/project-hero-penguin.png" alt="Litte Blue Penguin">
+                        </div>
+                        <div class="text-content-two">
+                            <p>Also, if you’re driving past the fence and notice any issues, perhaps a gate wedged open or some damage, please close the gate or let us know so that problems can be fixed immediately.  Thank you.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+         <!-- FOOTER -->
+         <footer>
+            <div class="site-map">
+                <div class="footer-map">
+                    <a href='about-us.html'><h6>HOME</h6></a>
+                    
+                </div>
+                <div class="footer-map">
+                    <a href='about-us.html'><h6>ABOUT US</h6></a>
+                    <a href='about-us.html'><p>Reports</p></a>
+                    <a href='about-us.html'><p>Our Team</p></a>
+                    <a href='about-us.html'><p>Research</p></a>
+                    <a href='about-us.html'><p>Gallery</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='get-involved.html'><h6>GET INVOLVED</h6></a>
+                    <a href='get-involved.html'><p>Join Us</p></a>
+                    <a href='get-involved.html'><p>Volunteer</p></a>
+                    <a href='get-involved.html'><p>News</p></a>
+                    <a href='get-involved.html'><p>Newsletter</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='projects.html'><h6>PROJECTS</h6></a>
+                    <a href='projects.html'><p>Monitor & Review</p></a>
+                    <a href='projects.html'><p>Education</p></a>
+                    <a href='projects.html'><p>Penguin Fence</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='#'><h6>CONTACT</h6></a>
+                    <a href='#'><p>Report Dead Penguin</p></a>
+                </div>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='donate.html'><h6>DONATE</h6></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-logos">
+                <div class="logo">
+                    <a href='index.html'><img src="img/phone-icon.png"></a>
+                </div>
+                <div class="socials">
+                    <i class="bi bi-facebook"></i>
+                   
+                    <a href='#'><img src="img/vimeo.png"></a>
+                </div>
+            </div>
+            <!-- copyright footer -->
+            <div id="copy-right">
+                <p>Copyright © 2018 The West Coast Penguin Trust, New Zealand | admin</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- js script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+        </script>
+       <script src="script.js"></script>
+    </body>
+</html>

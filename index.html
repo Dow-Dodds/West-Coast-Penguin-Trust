@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatable" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@800&display=swap" rel="stylesheet">      
+         <!-- bootstaps -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>West Coast Penguin Trust</title>
+    </head>
+
+    <body>
+    <header class="primary-header">
+        
+            <!-- navingation bar -->
+            <div id="logo">
+                <a href='index.html'><img id="phone-logo" src="img/phone-icon.png" alt="West Coast Penguin Trust Logo"></a>
+            </div>
+
+            <div id="big-logo">
+                <a href='index.html'><img id="big-logo" src="img/large-icon.png" alt="West Coast Penguin Trust Logo big"></a>
+            </div>
+
+            <!-- <div id="hamburger-icon">
+                <i class="bi bi-list"></i>
+            </div> -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+            </button>
+
+            <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+                <li id="hover-style" class="active"><a href='index.html'>HOME</a></li>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li id="hover-style"><a href='about-us.html'>ABOUT US</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">OUR TEAM</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">RESEARCH</a></li>
+                    <li><a class="dropdown-item" href="about-us.html">GALLERY</a></li>
+                </ul>
+                <button class="dropdown-toggle hover-style" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <li id="hover-style"><a href='get-involved.html'>GET INVOLVED</a></li>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="get-involved.html">GET INVOLVED</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">JOIN US</a></li>
+                    <li><a class="dropdown-item" href="volunteer-opportunities.html">VOLUNTEER OPPORTUNITIES</a></li>
+                    <li><a class="dropdown-item" href="get-involved.html">NEWS</a></li>
+                    <li><a class="dropdown-item" href="https://www.westcoastpenguintrust.org.nz/newsletters/april-2022-autumn-newsletter/" target="#">NEWSLETTER</a></li>
+                </ul>
+                <br></br>
+                <li id="hover-style"><a href='projects.html'>PROJECTS</a></li>
+                <li id="hover-style"><a href='#'>CONTACT</a></li>
+                <li id="donate"><a href='donate.html'>DONATE</a></li>
+            </ul>
+            </nav>
+    </header>
+    
+
+        <!-- hero section -->
+        <div class="hero">
+            <div id="text-content">
+                <h1>SAVE OUR PENGUINS</h1>
+                <p>Five of our six penguin species are in decline. Penguins and other seabirds are a treasure or taonga, and we strive to protect and conserve them and their habitat, the wider marine and coastal environment</p>
+            </div>
+            <div id="button-container">
+                <div id="cta-button">
+                <a href='get-involved.html'><h6>GET INVOLVED</h6></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- our mission section -->
+        <div id="mission-container">
+            <h2>OUR MISSION</h2>
+            <div id="future-vision" class="one-vision">
+                <span>
+                    <h4>FUTURE VISION</h4>
+                    <p>West Coast seabirds and their habitat are healthy and thriving.</p>
+                </span>
+            </div>
+
+            <div id="future-vision" class="two-vision">
+                <span>
+                    <h4>HOW</h4>
+                    <p>We strive to achieve this through research, education, awareness, advocacy and practical projects, founded on strong science.</p>
+                </span>
+            </div>
+        </div>
+
+        <!-- our projects home section  -->
+        <div id="projects-home">
+            <div id="text-content">
+            <h2>OUR PROJECTS</h2>
+            <p>Learn more about the projects we run to help our local penguins and birdlife.</p>
+            </div>
+         
+              
+              <!-- Projects Carousel -->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="education">
+                      <div id="middle-text"> 
+                         <h4><a href='projects.html'>EDUCATION</a></h4>
+                      </div>
+                  </div>
+                  <div class="carousel-item" id="fiordland-penguin">
+                    <h4><a href='projects.html'>FIORDLAND CRESTED PENGUIN PREDATOR STUDY</a></h4>
+                    <!-- <img src="img/white-overlay.png" class="d-block w-100" alt="..."> -->
+                  </div>
+                  <div class="carousel-item" id="penguin-fence">
+                    <h4><a href='projects.html'>PAHAUTANE PENGUIN FENCE</a></h4>
+                    <!-- <img src="img/white-overlay.png" class="d-block w-100" alt="..."> -->
+                  </div>
+                  <div class="carousel-item" id="gps-study">
+                      <h4><a href='projects.html'>GPS FORAGING STUDY</a></h4>
+                    <!-- <img src="img/white-overlay.png" class="d-block w-100" alt="..."> -->
+                  </div>
+                  <div class="carousel-item" id="cape-foulwind">
+                      <h4><a href='projects.html'>CAPE FOULWIND WALL ISLAND</a></h4>
+                    <!-- <img src="img/white-overlay.png" class="d-block w-100" alt="..."> -->
+                  </div>
+                  <div class="carousel-item" id="penguin-count">
+                    <h4><a href='projects.html'>WEST COAST PENGUIN COUNT</a></h4>
+                  <!-- <img src="img/white-overlay.png" class="d-block w-100" alt="..."> -->
+                </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <!-- Projects Carousel big screen  --> 
+              <div id="big-projects-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="project-group-one">
+                      <div class="project-container" id="education"> 
+                         <h4><a href='projects.html'>EDUCATION</a></h4>
+                      </div>
+
+                      <div class="project-container" id="fiordland-penguin">
+                        <h4><a href='projects.html'>FIORDLAND CRESTED PENGUIN PREDATOR STUDY</a></h4>
+                      </div>
+
+                      <div class="project-container" id="penguin-fence">
+                        <h4><a href='projects.html'>PAHAUTANE PENGUIN FENCE</a></h4>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item" id="group-two">
+                      <div class="project-container" id="gps-study"> 
+                        <h4><a href='projects.html'>GPS FORAGING STUDY</a></h4>
+                      </div>
+
+                      <div class="project-container" id="cape-foulwind">
+                        <h4><a href='projects.html'>CAPE FOULWIND WALL ISLAND</a></h4>
+                      </div>
+
+                      <div class="project-container" id="penguin-count">
+                        <h4><a href='projects.html'>WEST COAST PENGUIN COUNT</a></h4>
+                     </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#big-projects-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#big-projects-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- end of carousel -->
+
+        </div>
+        
+
+
+
+        <div id="birdsweprotect-container">
+            <div class="heading">
+                <h2>BIRDS WE PROTECT</h2>
+            </div>
+
+            <div class="mosaic-wrapper">
+                <div id="large-image">
+                    <h4>
+                        <a href='https://www.westcoastpenguintrust.org.nz/birds/blue-penguin/' target="#">LITTLE BLUE PENGUINS</a>
+                    </h4>
+                </div>
+                <div id="middle-images">
+                    <div id="top-middle-image">
+                        <h4>
+                            <a href='https://www.westcoastpenguintrust.org.nz/birds/fiordland-crested-penguins/' target="#">FIORDLAND CRESTED PENGUIN</a>
+                        </h4>
+                    </div>
+                    <div id="bottom-middle-image">
+                        <h4>
+                            <a href='https://www.westcoastpenguintrust.org.nz/birds/westland-petrel-taiko/' target="#">WESTLAND PETRAL</a>
+                        </h4>
+                    </div>
+                </div>
+                <div id="last-image">
+                    <h4>
+                        <a href='https://www.westcoastpenguintrust.org.nz/birds/other-seabirds/' target="#">OTHER SEABIRDS</a>
+                    </h4>
+                </div>
+            </div>
+            <div id="savebirds-section">
+                <h3>SAVE OUR LOCAL BIRDLIFE</h3>
+                <div id="cta-button">
+                <a href='donate.html'><h6>DONATE NOW</h6></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- homepage news  -->
+        <div class="news-wrapper">
+
+
+            <div class="heading">
+                <h2>NEWS</h2>
+            </div>
+            <!-- news carousel  -->
+            <div id="carouselExampleControls-news" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active news-item" id="news-one">
+                      <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/suzanne-hills-becomes-our-latest-trustee/' target="#">Suzanne Hills becomes our latest Trustee</a></h5>
+                        <p>25 March 2022</p>
+                      </div>
+                      <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/suzanne-hills-becomes-our-latest-trustee/' target="#"><img src="img/Suzanne-Hills-news-one.jpeg" class="d-block w-100" alt="Suzanne Hill new trustee"></a>
+                      </div>
+                  </div>
+                  <div class="carousel-item news-item" id="news-two">
+                    <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/proposed-mining-at-barrytown-declined/' target="#">Proposed mining at Barrytown declined</a></h5>
+                        <p>24 March 2022</p>
+                    </div>
+                    <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/proposed-mining-at-barrytown-declined/' target="#"><img src="img/mining-news-two.png" class="d-block w-100" alt="Mining declined"></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item news-item" id="news-three">
+                    <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/making-a-nest-box-for-a-blue-penguin/' target="#">Making a nest box for a blue penguin</a></h5>
+                        <p>22 March 2022</p>
+                    </div>
+                    <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/making-a-nest-box-for-a-blue-penguin/' target="#"><img src="img/makebox-nest-news-three.jpeg" class="d-block w-100" alt="Box nest"></a>
+                    </div>
+                  </div> 
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-news" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-news" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- news section for big screens -->
+            <div class="big-news-wrapper">
+                <div class="format-news" id="news-one">
+                    <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/suzanne-hills-becomes-our-latest-trustee/' target="#">Suzanne Hills becomes our latest Trustee</a></h5>
+                        <p>25 March 2022</p>
+                      </div>
+                      <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/suzanne-hills-becomes-our-latest-trustee/' target="#"><img src="img/Suzanne-Hills-news-one.jpeg" class="d-block w-100" alt="Suzanne Hill new trustee"></a>
+                      </div>
+                </div>
+
+                <div class="format-news" id="news-two">
+                    <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/proposed-mining-at-barrytown-declined/' target="#">Proposed mining at Barrytown declined</a></h5>
+                        <p>24 March 2022</p>
+                    </div>
+                    <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/proposed-mining-at-barrytown-declined/' target="#"><img src="img/mining-news-two.png" class="d-block w-100" alt="Mining declined"></a>
+                    </div>
+                </div>
+
+                <div class="format-news" id="news-three">
+                    <div id="text-content">
+                        <h5><a href='https://www.westcoastpenguintrust.org.nz/news/making-a-nest-box-for-a-blue-penguin/' target="#">Making a nest box for a blue penguin</a></h5>
+                        <p>22 March 2022</p>
+                    </div>
+                    <div class="photo-wrapper">
+                        <a href='https://www.westcoastpenguintrust.org.nz/news/making-a-nest-box-for-a-blue-penguin/' target="#"><img src="img/makebox-nest-news-three.jpeg" class="d-block w-100" alt="Box nest"></a>
+                    </div>
+                </div>
+
+            </div>
+            
+
+          
+                <div class="newsletter-container">
+                    <div id="current-newsletter">
+                        <div class="text-content">
+                            <h4>LATEST NEWSLETTTER</h4> 
+                            <h3>APRIL 2022</h3> 
+                            <div id="regular-button-white">
+                                <a href='https://www.westcoastpenguintrust.org.nz/newsletters/april-2022-autumn-newsletter/' targer="#"><h6>READ HERE</h6></a>
+                            </div>   
+                        </div>               
+                    </div>
+                
+
+                    <div id="sign-up">
+                        <div id="text-content">
+                            <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                            <p>Keep upto date on what we have been doing, what we are planning, events you can get involved in, the latest research and more.</p>
+                            <form>
+                                <p id="email">Email</p>
+                                <input class="input-field" type="text">
+                                <div id="cta-button">
+                                    <a href='donate.html'><h6>SUBSCRIBE</h6></a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div> 
+                </div>
+        </div>
+
+        <!-- homepage our awards section  -->
+        <div class="awards-wrapper">
+            <h2>OUR AWARDS</h2>
+            <div class="box-awards margin-right margin-left">
+                <a href='#'><img id="award-one" src="img/Awards-one.png"></a>
+            </div>
+            <div class="box-awards margin-right">
+                <a href='https://vimeo.com/127557962' target="#"><img id="award-two" src="img/awards-two.png"></a> 
+            </div>
+            <div class="box-awards big-right">
+                <a href='https://vimeo.com/127557962' target="#"></a>><img id="award-three" src="img/awards-three.png"></a> 
+            </div>
+        </div>
+
+        <!-- Our sponsors section -->
+        <div class="sponsors-wrapper">
+            <h2>OUR SPONSORS</h2>
+            <div id="box-white">
+                <div id="col-one">
+                    <a href="https://www.communitymatters.govt.nz/lottery-environment-and-heritage/" target="#">
+                        <img class="logo" id="lottery-grants-board" src="img/lotterylogo.png" alt="lottery grants board">
+                    </a>
+                    <img class="logo" id="anz" src="img/anz-stafflogo.png" alt="anz">
+                    <img class="logo" id="nz-transport" src="img/nztransportagencylogo.png" alt="NZ transport agency">
+                </div>
+                <div id="col-two">
+                    <img class="logo" id="doc" src="img/Department_of_Conservation_New_Zealand_logo.svg.png" alt="Department of Conservation New Zealand">
+                    <img class="logo" id="zoo" src="img/zoologo.png" alt="The Wellington Zoo">
+                    <img class="logo" id="sargood" src="img/sargood.png" alt="The Sargood Bequest">
+                </div>
+                <div id="col-three">
+                    <img class="logo" id="westcoast-community" src="img/WCCTlogo.png" alt="Westcoast Community Trust">
+                    <img class="logo" id="taronga" src="img/Taronga_Conservation_Society_Logo.png" alt="Taronga Conservation Society">
+                    <img class="logo" id="westland-milk" src="img/westmilk.png" alt="Westland Milk Products">
+                </div>
+                <div id="col-four">
+                    <img class="logo" id="buller" src="img/buller-district-council.gif" alt="Buller District Council">
+                    <img class="logo" id="tawaki" src="img/tawaki.png" alt="The Tawaki Project">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="site-map">
+                <div class="footer-map" id="home">
+                    <a href='about-us.html'>
+                        <h6 id="home">HOME</h6>
+                    </a>
+                    
+                </div>
+                <div class="footer-map">
+                    <a href='about-us.html'><h6>ABOUT US</h6></a>
+                    <a href='about-us.html'><p>Reports</p></a>
+                    <a href='about-us.html'><p>Our Team</p></a>
+                    <a href='about-us.html'><p>Research</p></a>
+                    <a href='about-us.html'><p>Gallery</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='get-involved.html'><h6>GET INVOLVED</h6></a>
+                    <a href='get-involved.html'><p>Join Us</p></a>
+                    <a href='get-involved.html'><p>Volunteer</p></a>
+                    <a href='get-involved.html'><p>News</p></a>
+                    <a href='get-involved.html'><p>Newsletter</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='projects.html'><h6>PROJECTS</h6></a>
+                    <a href='projects.html'><p>Monitor & Review</p></a>
+                    <a href='projects.html'><p>Education</p></a>
+                    <a href='projects.html'><p>Penguin Fence</p></a>
+                </div>
+                <div class="footer-map">
+                    <a href='#'><h6>CONTACT</h6></a>
+                    <a href='#'><p>Report Dead Penguin</p></a>
+                </div>
+                <div id="button-container">
+                    <div id="cta-button">
+                    <a href='donate.html'><h6>DONATE</h6></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-logos">
+                <div class="logo">
+                    <a href='index.html'><img src="img/phone-icon.png"></a>
+                </div>
+                <div class="socials">
+                    <i class="bi bi-facebook"></i>
+                   
+                    <a href='#'><img src="img/vimeo.png"></a>
+                </div>
+            </div>
+            <!-- copyright footer -->
+            <div id="copy-right">
+                <p>Copyright © 2018 The West Coast Penguin Trust, New Zealand | admin</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- js script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+        </script>
+       <script src="script.js"></script>
+    </body>
+</html>
